@@ -58,6 +58,11 @@ def parse_args():
         help=f"LoRA rank value (only used if --peft-type is 'lora'). Default: {DEFAULT_RANK}."
     )
 
+    parser.add_argument(
+        "-f", "--freeze-layers", choices=["partial", "full"], default=None,
+        help="Freezing the last three attention layers (partial) or all layers in the model. Options: 'partial', 'full'. Default: None"
+    )
+
     args = parser.parse_args()
 
     # Convert "None" strings to actual None
