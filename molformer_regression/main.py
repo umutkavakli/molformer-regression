@@ -2,11 +2,11 @@ import json
 import torch
 import argparse
 
-from data_selection.similarity import SiameseSimilarity
-from data_selection.influence import compute_influence, best_influences
-from train import train
-from test import test
-from utils import get_trainers, plot_model_loss
+from .data_selection.similarity import SiameseSimilarity
+from .data_selection.influence import compute_influence, best_influences
+from .train import train
+from .test import test
+from .utils import get_trainers, plot_model_loss
 
 DEFAULT_BATCH_SIZE = 16
 DEFAULT_EPOCHS = 40

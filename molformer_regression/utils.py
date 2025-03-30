@@ -11,9 +11,9 @@ from torch.optim.lr_scheduler import StepLR
 from datasets import load_dataset
 from transformers import AutoModel, AutoTokenizer, AutoModelForMaskedLM, DataCollatorForLanguageModeling
 
-from peft.peft import PEFT
-from data import SMILESDataset
-from model import MoLFormerWithRegressionHead
+from .peft.peft import PEFT
+from .data import SMILESDataset
+from .model import MoLFormerWithRegressionHead
 
 DATASET_PATH = "scikit-fingerprints/MoleculeNet_Lipophilicity"
 MODEL_NAME = "ibm/MoLFormer-XL-both-10pct"
