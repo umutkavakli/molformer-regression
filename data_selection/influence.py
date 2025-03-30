@@ -95,7 +95,7 @@ def lissa_inverse_hvp(
 
     return ihvp / repeats
 
-def computer_influence(model, criterion, train_dataset, test_dataset, device):
+def compute_influence(model, criterion, train_dataset, test_dataset, device):
     """
     Compute the influence score of each training sample on the test loss using influence functions.
 

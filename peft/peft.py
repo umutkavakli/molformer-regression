@@ -1,5 +1,5 @@
-from lora import LoRALayer
-from ia3 import IA3AdapterLayer
+from .lora import LoRALayer
+from .ia3 import IA3AdapterLayer
 
 
 class PEFT:

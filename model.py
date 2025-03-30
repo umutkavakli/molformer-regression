@@ -11,7 +11,7 @@ class MoLFormerWithRegressionHead(nn.Module):
     and adds a regression head to predict continuous values (e.g., solubility, toxicity).
     Supports different freezing strategies for transfer learning.
     """
-    def __init__(self, base_model, dropout_rate=0.2, is_mlm=False, freeze="none"):
+    def __init__(self, base_model, dropout_rate=0.2, is_mlm=False, freeze=None):
         """
         Initialize the MoLFormer with regression head.
         
@@ -29,7 +29,7 @@ class MoLFormerWithRegressionHead(nn.Module):
         else:
             self.base_model = base_model
 
-        if freeze ==  "none":
+        if freeze == None:
           for param in self.base_model.parameters():
             param.requires_grad = True
         elif freeze == "full":
