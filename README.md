@@ -1,5 +1,7 @@
 # molformer-regression
-This project explores techniques to fine-tune a chemical language model for predicting molecular lipophilicity, a key property in drug design. It was tested different strategies, including layer freezing, influence-based data selection, and parameter-efficient methods like LoRA and BitFit. Our results show that full fine-tuning delivers the best accuracy, while data selection and lightweight adaptation methods improve efficiency. This approach offers a balanced solution for molecular property prediction, with insights for future model optimization.
+This project explores techniques to fine-tune a chemical language model for predicting molecular lipophilicity, a key property in drug design. It was tested different strategies, including layer freezing, influence-based data selection, and parameter-efficient methods like LoRA and BitFit. Our results show that full fine-tuning delivers the best accuracy, while data selection and lightweight adaptation methods improve efficiency. This approach offers a balanced solution for molecular property prediction, with insights for future model optimization. <br>
+
+Molformer Regression is created by adapting original [Molformer](https://github.com/IBM/molformer) architecture into regression task.
 
 ## Installation
 
